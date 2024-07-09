@@ -1,0 +1,24 @@
+.welcome {
+  &-content {
+    background-image: url(../img/welcome/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+  }
+  &-item {
+    max-width: 538px;
+    padding-left: 70px;
+
+  }
+  &-title {
+    font: var(--txt-700-39-100-ff);
+    color: var(--gray---gray-11);
+    margin-bottom: 15px;
+  }
+  &-desc {
+    font: var(--txt-400-24-100-ff);
+    color: var(--gray---gray-11);
+  }
+}

@@ -1,0 +1,35 @@
+.header {
+  padding: 44px 0 25px;
+  background-color: var(--gray---gray-1);
+  &-content {
+    @include flex-spaceBetween-center;
+    gap: 20px;
+  }
+
+  // header-left
+  &-left {
+    &__name {
+      font: var(--txt-400-15-100-ff);
+      color: var(--gray---gray-10);
+    }
+  }
+
+  // header-right
+  &-right {
+    display: flex;
+    gap: 8px;
+    &__btn {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      &-txt {
+        font: var(--txt-400-16-150-ff);
+        color: var(--gray---gray-1);
+      }
+      &-text {
+        font: var(--txt-400-16-150-ff);
+        color: var(--gray---gray-8);
+      }
+    }
+  }
+}

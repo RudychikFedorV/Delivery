@@ -1,0 +1,45 @@
+.footer {
+  padding: 60px 0;
+  background-color: var(--gray---gray-1);
+  &-content {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  // footer-left
+  &-left {
+    &__name {
+      font: var(--txt-400-15-100-ff);
+      color: var(--gray---gray-10);
+    }
+  }
+
+  // footer-center
+  &-center {
+    display: flex;
+    gap: 15px;
+    &__contacts {
+      font: var(--txt-400-18-100-ff);
+      color: var(--gray---gray-8);
+      transition: var(--transition);
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  // footer-right
+  &-right {
+    display: flex;
+    gap: 21px;
+    margin-left: auto;
+    &__link {
+      display: inline-block;
+      transition: var(--transition);
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
