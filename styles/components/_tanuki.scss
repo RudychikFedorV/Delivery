@@ -1,0 +1,93 @@
+.products {
+  &-name {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin-bottom: 44px;
+    &__title {
+      font: var(--txt-700-36-100-ff);
+      color: var(--gray---gray-10);
+    }
+    &__block {
+      display: flex;
+      align-items: center;
+      column-gap: 7px;
+      span {
+        font: var(--txt-700-18-178-ff);
+        color: var(--color-span);
+      }
+    }
+    &__price {
+      font: var(--txt-400-18-178-ff);
+      color: var(--gray---gray-7);
+    }
+    &__circle {
+      position: absolute;
+      left: 310px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &__name {
+      font: var(--txt-400-18-178-ff);
+      color: var(--gray---gray-7);
+    }
+  }
+  &-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+  &-item {
+    border-radius: 7px;
+    max-width: 384px;
+    box-shadow: var(--box-shadow-item);
+    background: var(--gray---gray-1);
+    transition: var(--transition);
+    &:hover {
+      opacity: 0.7;
+    }
+    &__wrapper {
+      padding: 0 24px 30px;
+    }
+    &__title {
+      margin: 20px 0 10px;
+      font: var(--txt-400-24-133-ff);
+      color: var(--gray---gray-10);
+    }
+    &__desc {
+      font: var(--txt-400-18-100-ff);
+      color: var(--gray---gray-7);
+      margin-bottom: 25px;
+    }
+    &__block {
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+      &-btn {
+        position: relative;
+        display: inline-block;
+        border-radius: 2px;
+        padding: 8px 36px 8px 16px;
+        background: var(--daybreak-blue---blue-6);
+        font: var(--txt-400-16-150-ff);
+        color: var(--gray---gray-1);
+        transition: var(--transition);
+        &:hover {
+          opacity: 0.7;
+          background: var(--lime---lime-7);
+        }
+        img {
+          position: absolute;
+          right: 16px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      &-price {
+        font: var(--txt-700-20-160-ff);
+        color: var(--gray---gray-10);
+      }
+    }
+  }
+}
