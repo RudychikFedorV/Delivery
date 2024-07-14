@@ -21,6 +21,7 @@ body {
   }
 }
 .btns {
+  display: inline-block;
   padding: 8px 16px;
   border-radius: 2px;
   transition: var(--transition);
@@ -29,13 +30,17 @@ body {
   }
 }
 .btn1 {
-  width: 98px;
-  height: 40px;
   background: var(--daybreak-blue---blue-6);
 }
 .btn2 {
   border: 1px solid var(--gray---gray-5);
   background: var(--gray---gray-1);
-  width: 116px;
-  height: 40px;
+}
+.btn3 {
+  border: 1px solid var(--daybreak-blue---blue-5);
+  border-radius: 2px;
+  padding: 5px 16px;
+  background: var(--gray---gray-1);
+  font:var(--txt-400-14-157-ff);
+  color: var(--daybreak-blue---blue-5);
 }
