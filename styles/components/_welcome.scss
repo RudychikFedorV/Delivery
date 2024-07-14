@@ -3,9 +3,10 @@
     background-image: url(../img/welcome/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
+    background-position: 70%;
     display: flex;
     align-items: center;
+    padding: 68px 0;
   }
   &-item {
     max-width: 538px;

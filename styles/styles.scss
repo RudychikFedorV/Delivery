@@ -7,10 +7,12 @@
 
 // layout
 @import 'layout/base';
+@import 'layout/grid';
 @import 'layout/scroll';
 
 // components
 @import 'components/header';
 @import 'components/main';
 @import 'components/welcome';
+@import 'components/restaurants';
 @import 'components/footer';

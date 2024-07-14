@@ -1,0 +1,96 @@
+.restaurants {
+  padding-top: 50px;
+  &-name {
+    @include flex-spaceBetween-center;
+    gap: 20px;
+    margin-bottom: 40px;
+    &__title {
+      font: var(--txt-700-36-100-ff);
+      color: var(--gray---gray-10);
+    }
+    &__search {
+      position: relative;
+      input {
+        border: 1px solid var(--gray---gray-5);
+        border-radius: 2px;
+        background: var(--gray---gray-1);
+        padding: 5px 12px 5px 32px;
+
+        font: var(--txt-400-16-150-ff);
+        color: var(--gray---gray-10);
+        &::placeholder {
+          font: var(--txt-400-16-150-ff);
+          color: var(--gray---gray-6);
+        }
+      }
+      &-img {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+      }
+    }
+  }
+  &-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+  &-item {
+    cursor: pointer;
+    transition: var(--transition);
+    &:hover {
+      opacity: 0.7;
+    }
+    &__img {
+      border-radius: 7px 7px 0 0;
+      margin-bottom: 20px;
+    }
+    &__block1 {
+      @include flex-spaceBetween-center;
+      column-gap: 10px;
+      margin-bottom: 10px;
+      &-name {
+        font: var(--txt-700-24-133-ff);
+        color: var(--gray---gray-10);
+      }
+      &-time {
+        font: var(--txt-400-12-167-ff);
+        color: var(--gray---gray-1);
+        padding: 1px 8px;
+        background: var(--gray---gray-9);
+        border-radius: 2px;
+      }
+    }
+    &__block2 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      column-gap: 25px;
+      &-rating {
+        display: flex;
+        align-items: center;
+        column-gap: 7px;
+        span {
+          font: var(--txt-700-18-178-ff);
+          color: var(--color-span);
+        }
+      }
+      &-price {
+        font: var(--txt-400-18-178-ff);
+        color: var(--gray---gray-7);
+      }
+      &-circle {
+        position: absolute;
+        left: 157px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &-name {
+        font: var(--txt-400-18-178-ff);
+        color: var(--gray---gray-7);
+      }
+    }
+  }
+}
