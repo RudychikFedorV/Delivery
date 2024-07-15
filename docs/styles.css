@@ -743,10 +743,6 @@ body {
   left: 0;
   background: var(--background-overlay);
 }
-.cart-modal__overlay:open {
-  display: block;
-  position: relative;
-}
 .cart-modal__overlay .cart-modal {
   position: absolute;
   top: 50%;
@@ -816,6 +812,10 @@ body {
 .cart-modal__overlay .cart-modal__footer-btn2 {
   font: var(--txt-400-16-150-ff);
   color: var(--gray---gray-8);
+}
+
+.cart-modal__overlay.open {
+  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */

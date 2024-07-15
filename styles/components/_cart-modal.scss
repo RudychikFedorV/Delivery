@@ -7,10 +7,6 @@
   left: 0;
   background: var(--background-overlay);
 
-  &:open {
-    display: block;
-    position: relative;
-  }
   .cart-modal {
     position: absolute;
     top: 50%;
@@ -55,7 +51,7 @@
       @include flex-spaceBetween-center;
       column-gap: 20px;
       &-price {
-        font:var(--txt-700-20-100-ff);
+        font: var(--txt-700-20-100-ff);
         color: var(--gray---gray-2);
         padding: 15px 20px;
         border-radius: 5px;
@@ -67,13 +63,17 @@
         column-gap: 10px;
       }
       &-btn1 {
-        font:var(--txt-400-16-150-ff);
+        font: var(--txt-400-16-150-ff);
         color: var(--gray---gray-1);
       }
       &-btn2 {
-        font:var(--txt-400-16-150-ff);
+        font: var(--txt-400-16-150-ff);
         color: var(--gray---gray-8);
       }
     }
   }
+}
+.cart-modal__overlay.open {
+  display: block;
+//   position: relative;
 }
