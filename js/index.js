@@ -109,9 +109,7 @@ const restsFunc = () => {
                     <span>${card.rating}</span>            
                   </div>          
                   <p class="restaurants-item__block2-price">От ${card.price} грн</p>          
-                  <img src="./img/restaurants/circle.svg" alt="circle"          
-                      class="restaurants-item__block2-circle">          
-                 <p class="restaurants-item__block2-name">${card.type}</p>           
+                  <p class="restaurants-item__block2-name">${card.type}</p>           
             </div>                      
         </a>                         
       `

@@ -25,10 +25,16 @@
       &-txt {
         font: var(--txt-400-16-150-ff);
         color: var(--gray---gray-1);
+        @include mobile-small {
+          font: var(--txt-400-15-100-ff);
+        }
       }
       &-text {
         font: var(--txt-400-16-150-ff);
         color: var(--gray---gray-8);
+        @include mobile-small {
+          font: var(--txt-400-15-100-ff);
+        }
       }
     }
   }

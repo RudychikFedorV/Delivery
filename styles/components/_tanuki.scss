@@ -1,13 +1,16 @@
 .products {
   &-name {
-    position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     column-gap: 30px;
     margin-bottom: 44px;
     &__title {
       font: var(--txt-700-36-100-ff);
       color: var(--gray---gray-10);
+      @include mobile {
+        font: var(--txt-700-30-100-ff);
+      }
     }
     &__block {
       display: flex;
@@ -22,12 +25,6 @@
       font: var(--txt-400-18-178-ff);
       color: var(--gray---gray-7);
     }
-    &__circle {
-      position: absolute;
-      left: 310px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
     &__name {
       font: var(--txt-400-18-178-ff);
       color: var(--gray---gray-7);
@@ -37,6 +34,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include mobile {
+      gap: 15px;
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
   }
   &-item {
     border-radius: 7px;
@@ -72,6 +77,7 @@
         background: var(--daybreak-blue---blue-6);
         font: var(--txt-400-16-150-ff);
         color: var(--gray---gray-1);
+        white-space: nowrap;
         transition: var(--transition);
         &:hover {
           opacity: 0.7;
@@ -87,6 +93,7 @@
       &-price {
         font: var(--txt-700-20-160-ff);
         color: var(--gray---gray-10);
+        white-space: nowrap;
       }
     }
   }

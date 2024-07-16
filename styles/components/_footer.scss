@@ -1,10 +1,18 @@
 .footer {
   padding: 60px 0;
   background-color: var(--gray---gray-1);
+  @include mobile-small{
+    padding: 30px 0;
+  }
   &-content {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 35px;
+    @include tablet-small{
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   // footer-left
@@ -18,11 +26,20 @@
   // footer-center
   &-center {
     display: flex;
-    gap: 15px;
+    gap: 15px;  
+    @include mobile-small{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+   
     &__contacts {
       font: var(--txt-400-18-100-ff);
       color: var(--gray---gray-8);
+      white-space: nowrap;
       transition: var(--transition);
+      @include mobile-small{
+        font: var(--txt-400-15-100-ff);
+      }
       &:hover {
         opacity: 0.7;
       }
@@ -34,6 +51,9 @@
     display: flex;
     gap: 21px;
     margin-left: auto;
+    @include tablet-small{
+      margin-left: inherit;
+    }
     &__link {
       display: inline-block;
       transition: var(--transition);

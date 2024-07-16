@@ -1,4 +1,7 @@
 .main {
   background: var(--gray---gray-2);
   padding: 20px 0 90px;
+  @include mobile {
+    padding: 0 0 40px;
+  }
 }

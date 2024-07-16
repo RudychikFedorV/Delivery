@@ -24,6 +24,9 @@
       &-title {
         font: var(--txt-700-36-100-ff);
         color: var(--gray---gray-10);
+        @include mobile {
+          font: var(--txt-700-30-100-ff);
+        }
       }
     }
     &__body {
@@ -34,6 +37,13 @@
         flex-wrap: wrap;
         padding: 15px 0 10px;
         border-bottom: 1px solid var(--gray---gray-5);
+        &__title {
+          font: var(--txt-400-18-178-ff);
+          color: var(--gray---gray-10);
+          @include mobile {
+            font: var(--txt-400-15-100-ff);
+          }
+        }
         &__controls {
           display: flex;
           align-items: center;
@@ -42,6 +52,9 @@
             font: var(--txt-700-20-160-ff);
             color: var(--gray---gray-10);
             margin-right: 35px;
+            @include mobile {
+              font: var(--txt-400-15-100-ff);
+            }
           }
         }
       }
@@ -50,12 +63,21 @@
     &__footer {
       @include flex-spaceBetween-center;
       column-gap: 20px;
+      @include mobile-small {
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: start;
+      }
       &-price {
         font: var(--txt-700-20-100-ff);
         color: var(--gray---gray-2);
         padding: 15px 20px;
         border-radius: 5px;
         background: var(--gray---gray-9);
+        @include mobile {
+          padding: 10px 15px;
+          font: var(--txt-700-16-100-ff);
+        }
       }
       &-controls {
         display: flex;
@@ -75,5 +97,5 @@
 }
 .cart-modal__overlay.open {
   display: block;
-//   position: relative;
+  //   position: relative;
 }
